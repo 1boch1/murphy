@@ -1,2 +1,2 @@
 # murphy
-Simple Functional Programming Language ( Scanner, Parser, Interpreter )
+Simple Functional Programming Language (Scanner + Parser + Interpreter)
