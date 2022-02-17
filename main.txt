@@ -1,0 +1,12 @@
+FUNC fact(n) = 
+
+	TEST n < 2 
+	SUCCESS 1
+	FAIL
+		n * fact(n-1)
+IN
+
+DEF n = 5 
+IN
+
+fact(n)
