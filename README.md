@@ -135,7 +135,9 @@ This language only works with Integer Numbers
   ```javascript
    FUNC sum (x, y) = x + y
    IN
-    5 + sum(2, 3) //10
+    TEST sum(2, 3) == 5
+    SUCCESS sum(2, 3)
+    FAIL 0
    ...
   ```
  
