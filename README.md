@@ -1,5 +1,5 @@
 # Murphy
-Simple Functional Programming Language ( Scanner, Parser, Interpreter )
+Scanner, Parser and Interpreter of a Simple Functional Programming Language
 
 ## Libraries
 
