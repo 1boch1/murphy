@@ -1,0 +1,20 @@
+FUNC apply_fun_v_ntimes(fun, v, n) = 
+
+	TEST n > 0 
+	SUCCESS 
+		apply_fun_v_ntimes(fun, fun(v), n - 1)
+	FAIL
+		v
+IN
+
+FUNC square(x) = x * x
+IN
+
+DEF val = 2 
+IN
+
+apply_fun_v_ntimes(square, val, 3) 
+
+
+
+

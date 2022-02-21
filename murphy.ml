@@ -700,12 +700,26 @@ let rec eval ast =
 
                                                                         if List.length formals == List.length actuals
                                                                         then
-                                                                          let form = List.map (function e -> match e with | Ide ide -> ide | _ -> failwith "Error") formals
+                                                                          let form = List.map (function e -> match e with | Ide ide -> ide | _ -> failwith "Error") (List.rev formals)
                                                                           in 
 
                                                                           for i = 0 to (List.length formals) - 1
                                                                           do
-                                                                            ev_env := (List.nth form i, eval (List.nth actuals i)) :: !ev_env
+                                                                            let act_param = List.nth actuals i 
+                                                                            in
+
+                                                                            match act_param with
+                                                                            | Ide ide -> let v = getVal ide !env 
+                                                                                         in
+
+                                                                                         (match v with 
+                                                                                         (* This is made to have functions as parameters *)
+                                                                                         | CLOSURE (a,b,c) -> ev_env := (List.nth form i, CLOSURE (a,b,c)) :: !ev_env   
+                                                                                         | NUM (n) -> ev_env := (List.nth form i, NUM (n)) :: !ev_env
+                                                                                         | _ -> failwith "Error")
+
+                                                                            | _ -> ev_env := (List.nth form i, eval act_param) :: !ev_env 
+
                                                                           done 
                                                                         else
                                                                         failwith "Error: the function was not expecting this number of arguments" ;
