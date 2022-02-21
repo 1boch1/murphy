@@ -9,6 +9,9 @@ No external libraries were used, you only need to have OCaml installed.
 
 ![image](https://user-images.githubusercontent.com/69087218/154868581-168e9e68-7087-4d62-895c-cbe33c2e805b.png)
 
+![image](https://user-images.githubusercontent.com/69087218/155034502-683f3c0b-81c0-4263-89cd-8bfe380b152b.png)
+
+
 
 ## Project setup (Linux)
 
