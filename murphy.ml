@@ -82,7 +82,7 @@ let scan code =
 
                  | _ -> print_endline ("Error at line: " ^ string_of_int (linecount) ^ ".\n") ;
                         print_endline "Some possible errors: " ;
-                        print_endline "1) Did you mispell TEST ? \n2) Did you try to define a variable using uppercase ?\n...\n" ;
+                        print_endline "1) Did you mispell TEST ? \n2) Did you try to define a variable using uppercase letters ?\n...\n" ;
                         failwith ("SCANNER ERROR")
                )
                else 
@@ -105,7 +105,7 @@ let scan code =
                  
                  | _ -> print_endline ("Error at line: " ^ string_of_int (linecount) ^ ".\n") ;
                         print_endline "Some possible errors: " ;
-                        print_endline "1) Did you mispell SUCCESS ? \n2) Did you try to define a variable using uppercase ?\n...\n" ;
+                        print_endline "1) Did you mispell SUCCESS ? \n2) Did you try to define a variable using uppercase letters ?\n...\n" ;
                         failwith ("SCANNER ERROR")
                )
                else 
@@ -138,7 +138,7 @@ let scan code =
 
                   | _ -> print_endline ("Error at line: " ^ string_of_int (linecount) ^ ".\n") ;
                          print_endline "Some possible errors: " ;
-                         print_endline "1) Did you mispell FAIL/FUNC ? \n2) Did you try to define a variable using uppercase ?\n...\n" ;
+                         print_endline "1) Did you mispell FAIL/FUNC ? \n2) Did you try to define a variable using uppercase letters ?\n...\n" ;
                          failwith ("SCANNER ERROR")
                 )
                 else 
@@ -166,7 +166,7 @@ let scan code =
 
                    | _ -> print_endline ("Error at line: " ^ string_of_int (linecount) ^ ".\n") ;
                           print_endline "Some possible errors: " ;
-                          print_endline "1) Did you mispell DEF ? \n2) Did you try to define a variable using uppercase ?\n...\n" ;
+                          print_endline "1) Did you mispell DEF ? \n2) Did you try to define a variable using uppercase letters ?\n...\n" ;
                           failwith ("SCANNER ERROR")
                  )
                  else 
@@ -189,7 +189,7 @@ let scan code =
 
                   | _ -> print_endline ("Error at line: " ^ string_of_int (linecount) ^ ".\n") ;
                          print_endline "Some possible errors: " ;
-                         print_endline "1) Did you mispell IN ? \n2) Did you try to define a variable using uppercase ?\n...\n" ;
+                         print_endline "1) Did you mispell IN ? \n2) Did you try to define a variable using uppercase letters ?\n...\n" ;
                          failwith ("SCANNER ERROR")
                 )
                 else 
