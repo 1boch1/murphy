@@ -26,7 +26,10 @@ No external libraries were used, you only need to have OCaml installed.
   
 ## Syntax
 
-This language only works with Integer Numbers
+- This language only works with Integer Numbers
+- IF, LET, IN, TEST, SUCCESS, FAIL, FUNC must be capitalized
+- Variables can't contain Capital Letters
+- Variables can't start with a Number
 
 ### Algebraic expressions
 
